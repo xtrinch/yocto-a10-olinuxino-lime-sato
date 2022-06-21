@@ -1,6 +1,11 @@
 # yocto-a10-olinuxino-lime
 
+Yocto poky distribution sato image for A10 Olinuxino Lime development board. 
+(Sato image contains an X11 environment with a file browser, terminal, media player, ...)
+
 Use dunfell branches, kirkland has errors.
+
+## Usage
 
 Activate env:
 `source poky/oe-init-build-env build`
@@ -9,9 +14,6 @@ Add layers:
 `cd build`
 `bitbake-layers add-layer ../meta-openembedded/meta-oe`
 `bitbake-layers add-layer ../meta-sunxi`
-`bitbake-layers add-layer ../meta-clang`
-`bitbake-layers add-layer ../meta-browser/meta-chromium`
-
 
 Verify layers:
 `bitbake-layers show-layers`
