@@ -2,6 +2,8 @@
 
 Yocto poky distribution sato image repo setup for A10 Olinuxino Lime development board. 
 (Sato image contains an X11 environment with a file browser, terminal, media player, ...)
+The sato image is provided by the poky distirbution, this repo just sets everything up to
+be able to build it.
 
 Dependencies are the poky layer, openembedded layer and the sunxi layer,
 
