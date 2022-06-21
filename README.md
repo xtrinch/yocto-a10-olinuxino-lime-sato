@@ -7,30 +7,32 @@ Use dunfell branches, kirkland has errors.
 
 ## Usage
 
-### Activate env:
+- Activate env:
 `source poky/oe-init-build-env build`
 
-### Add layers:
+- Add layers:
 `cd build`
 `bitbake-layers add-layer ../meta-openembedded/meta-oe`
 `bitbake-layers add-layer ../meta-sunxi`
 
-### Verify layers:
+- Verify layers:
 `bitbake-layers show-layers`
 
-### Menuconfig:
+- Menuconfig:
 `bitbake -c menuconfig virtual/kernel`
 `bitbake -c menuconfig busybox` # tooling
 
-### Basic X11 terminal image:
+- Basic X11 terminal image:
 `bitbake core-image-x11`
 
-### Burn to sd `build/tmp/deploy/images/olinuxino-a10lime/core-image-x11-olinuxino-a10lime.sunxi-sdimg`
+- Burn to sd 
+`build/tmp/deploy/images/olinuxino-a10lime/core-image-x11-olinuxino-a10lime.sunxi-sdimg`
 
-### Basic desktop image:
+- Basic desktop image:
 `bitbake core-image-sato`
 
-### Burn to sd `build/tmp/deploy/images/olinuxino-a10lime/core-image-sato-olinuxino-a10lime.sunxi-sdimg`
+- Burn to sd 
+`build/tmp/deploy/images/olinuxino-a10lime/core-image-sato-olinuxino-a10lime.sunxi-sdimg`
 
-### Other commands:
+- Other commands:
 `bitbake -e | grep SOME_VARIABLE`
