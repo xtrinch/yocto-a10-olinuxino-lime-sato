@@ -3,7 +3,7 @@
 Yocto poky distribution sato image for A10 Olinuxino Lime development board. 
 (Sato image contains an X11 environment with a file browser, terminal, media player, ...)
 
-Use dunfell branches, kirkland has errors.
+Use yocto dunfell branches, kirkland has errors.
 
 ## Usage
 
